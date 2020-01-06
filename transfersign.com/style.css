@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  bottom: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+  cursor: pointer;
+
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+a:active {
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+
+}
+
+.wrap {
+  width: 100%;
+
+
+}
+
+.container {
+  padding: 0 80px;
+  max-width: 1600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* .justify-content-left {
+  justify-content: flex-start;
+} */
+.align-items-center {
+  align-items: center;
+}
+
+/* ----header--- */
+.header {
+
+  padding: 25px 0;
+}
+
+.nav-list li {
+  margin-right: 96px;
+  font-size: 18px;
+}
+
+.display-none {
+  display: none;
+}
+
+/* ----main--- */
+.main {
+  background-color: #3080DE;
+  color: #FFFFFF;
+}
+
+.left-block {
+  width: 50%;
+  text-align: left;
+}
+
+.left-block_title {
+  padding-top: 115px;
+  font-size: 50px;
+}
+
+.left-block_text {
+  max-width: 480px;
+  font-weight: normal;
+  line-height: 1.42;
+  margin-top: 20px;
+}
+
+.right-block {
+  margin: 25px 0;
+  background-color: #fff;
+  min-width: 521px;
+  border-radius: 8px;
+  border: 1px dashed #4A90E2;
+}
+
+.right-block-box_image {
+  padding-top: 90px;
+}
+
+.right-block-box_text {
+  color: #000000;
+  padding-top: 27px;
+}
+
+.right-block-box_text-small {
+  color: #4F4F4F;
+  font-weight: normal;
+  font-size: 24px;
+  font-family: 'Palanquin', sans-serif;
+}
+
+.right-block-box {
+  padding-bottom: 100px;
+}
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  width: 169px;
+  height: 42px;
+  background-color: #27AE60;
+  color: #FFFFFF;
+  transition: .25s all ease;
+  border: none;
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+/* ------- additional-block ----- */
+.additional-block .container {
+  padding: 120px 80px;
+
+}
+
+.item-icon {
+  padding-bottom: 25px;
+}
+
+.additional-block_list_item:nth-child(2) {
+  margin: 0 140px;
+}
+
+.additional-block_list_item:nth-child(2) .item-icon {
+  padding-bottom: 0;
+}
+
+/* --- block-upload-progres ---*/
+.block-upload-progres-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.block-progressbar {
+  margin-left: 30px;
+  flex-direction: column;
+
+
+}
+
+.block-progressbar-title {
+  text-align: left;
+
+}
+
+.progressbar {
+  margin-top: 10px;
+  width: 320px;
+  height: 2px;
+  background: silver;
+  /* border-bottom: 2px solid #2D9CDB; */
+}
+
+.progressbar::before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 100%;
+  background: #2D9CDB;
+}
+
+/*--- block-upload-finish ---*/
+.block-upload-finish-nameFile {
+  margin-left: 35px;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 14px;
+}
+
+.block-upload-finish-delete {
+  margin-left: 110px;
+}
+
+.download-attachment {
+  margin-left: 45px;
+}
+
+.download-attachment-title {
+  font-size: 7px;
+  color: #828282;
+  margin-bottom: 5px;
+}
+
+/*--- block-upload-finish-list ---*/
+.block-upload-finish-list {
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.upload-list-item {
+  margin-bottom: 16px;
+}
+
+.custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  margin-top: 57px;
+}
+
+.custom-counter li {
+  counter-increment: step-counter;
+}
+
+.custom-counter li {
+  counter-increment: step-counter;
+}
+
+.upload-list-item::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: rgb(200, 200, 200);
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+
+.upload-list-item:active:before {
+  background-color: #27AE60;
+  transition: all 350ms;
+}
+
+/* ----footer--- */
+.footer span {
+  font-weight: normal;
+  font-size: 16px;
+  padding-bottom: 24px;
+}

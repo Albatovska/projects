@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign checker</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container d-flex justify-content-between ">
+        <div class="heder-logo">
+          <img src="./images/Logo.svg" alt="logo" class="logo">
+        </div>
+        <!-- /.heder-logo -->
+        <nav class="heder-nav d-flex ">
+          <ul class="nav-list d-flex align-items-center">
+            <li class="nav-list_item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-list_item">
+              <a href="#">How it works</a>
+            </li>
+            <li class="nav-list_item">
+              <a href="#">TransferSign</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.heder-nav -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <section class="main">
+      <div class="container">
+        <div class="wrap d-flex justify-content-between">
+          <div class="left-block">
+            <h1 class="left-block_title">
+              Sign Checker
+            </h1>
+            <div class="left-block_text">
+              <p>
+                Check your transaction here.</br> See if signature and transaction are valid </br>and browse container
+                structure
+                with attachments.</br>Simple. No registration required.
+              </p>
+            </div>
+          </div>
+          <!-- /.left-block -->
+          <div class="right-block">
+            <div class="right-block-box">
+              <div class="right-block-box_image">
+                <img src="./images/upload-icon.svg" alt="uplpad" class="icons">
+              </div>
+              <!-- /.right-block-box_image -->
+              <div class="right-block-box_text">
+                <p>
+                  Drag and drop ASICE container here
+                </p>
+              </div>
+              <!-- /.right-block-box_text -->
+              <div class="right-block-box_text-small">or</div>
+              <!-- /.right-block-box_text-small -->
+              <button class="button">Browse files</button>
+            </div>
+            <!-- /.right-block-box -->
+          </div>
+          <!-- /.right-block -->
+        </div>
+        <!-- /.wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.main -->
+    <section class="additional-block">
+      <div class="container ">
+        <div class="additional-block_inner d-flex justify-content-around ">
+          <div class="additional-block_list_item align-items-center">
+            <div class="item-icon">
+              <img src="./images/upload-icon.svg" alt="icon" class="icon">
+            </div>
+            <!-- /.icon -->
+            <div class="item-text">
+              Upload ASICE container
+            </div>
+            <!-- /.item-text -->
+          </div>
+          <!-- /.additional-block_list_item -->
+          <div class="additional-block_list_item ">
+            <div class="item-icon">
+              <a href="#" class="link">
+                <img src="./images/check-icon.svg" alt="icon" class="icon">
+              </a>
+            </div>
+            <!-- /.icon -->
+            <div class="item-text">
+              Check transaction
+              and signature
+            </div>
+            <!-- /.item-text -->
+          </div>
+          <!-- /.additional-block_list_item -->
+          <div class="additional-block_list_item ">
+            <div class="item-icon">
+              <img src="./images/download-icon.svg" alt="icon" class="icon">
+            </div>
+            <!-- /.icon -->
+            <div class="item-text">
+              Download transaction documents
+            </div>
+            <!-- /.item-text -->
+          </div>
+          <!-- /.additional-block_list_item -->
+        </div>
+        <!-- /.additional-block_inner -->
+        <div class="upload-block_inner display-none">
+          <div class="block-upload-progres-title">
+            Uploads
+          </div>
+          <!-- /.block-upload-progres-title -->
+          <div class="block-upload-progres d-flex display-none">
+
+            <div class="progres-icon">
+              <img src="./images/Group-upload.svg" alt="icon" class="icon">
+            </div>
+            <div class="block-progressbar d-flex">
+              <div class="block-progressbar-title">
+                asice.container
+              </div>
+              <div class="progressbar">
+
+              </div>
+              <!-- /.progres-show-title -->
+            </div>
+            <!-- /.progres-show -->
+            <!-- /.progres-icon -->
+          </div>
+          <!-- /.block-upload-progres -->
+          <div class="block-upload-finish d-flex ">
+            <div class="block-upload-finish-info d-flex align-items-center">
+              <div class="progres-icon">
+                <img src="./images/Group-upload.svg" alt="icon" class="icon">
+              </div>
+              <div class="block-upload-finish-nameFile d-flex">
+                Name asice.container
+              </div>
+              <!-- /.block-upload-finish-nameFile -->
+              <div class="block-upload-finish-delete d-flex align-items-center">
+                <a href="#">
+                  <img src="./images/trash-2.svg" alt="" class="basket">
+                </a>
+              </div>
+              <!-- /.block-upload-finish-delete -->
+              <div class="download-attachment ">
+                <div class="download-attachment-title">
+                  Download </br>
+                  attachment
+                </div>
+                <!-- /.download-attachment-title -->
+                <div class="download-attachment-icon">
+                  <a href="#">
+                    <img src="./images/Group_small.svg" alt="" class="icon">
+                  </a>
+                </div>
+                <!-- /.download-attachment-icon -->
+              </div>
+              <!-- /.download-attachment -->
+            </div>
+            <!-- /.block-upload-finish-info -->
+          </div>
+          <div class="block-upload-finish-list d-flex">
+            <ol type="circle" class="custom-counter">
+              <li class="upload-list-item">Container is valid</li>
+              <li class="upload-list-item">Signature is valid</li>
+              <li class="upload-list-item">Transaction is valid</li>
+            </ol>
+          </div>
+          <!-- /.block-upload-finish-list -->
+        </div>
+        <!--/.upload-block_inner-->
+
+        <!-- /.upload-block_inner -->
+      </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.additional -->
+    <footer class="footer">
+      <div class="container d-flex">
+        <span>© 2019 TransferSign</span>
+      </div>
+      <!-- /.container -->
+    </footer>
+  </div>
+  <!-- /.wrapper -->
+</body>
+
+</html>
