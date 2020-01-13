@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
 a {
   text-decoration: none;
   text-transform: none;
@@ -22,6 +27,12 @@ ul {
   margin: 0 auto;
 }
 
+.sign-checker {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 /* ----header--- */
 .sign-checker .header .right-label {
   color: #2B2B2B;
@@ -40,6 +51,7 @@ ul {
 
 .navbar ul {
   margin: auto;
+  padding-left: 0;
 }
 
 .nav-list_item {
@@ -50,13 +62,20 @@ ul {
 }
 
 /* ----content-custom--- */
-.content-custom {
-  background-color: #3080DE;
+.sign-checker .content-custom {
+
   color: #FFFFFF;
+  min-height: 67%;
 }
 
-.content {
-  padding: 80px 65px;
+.content-block {
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+.content-label {
+  width: 100%;
 }
 
 .content-label h1 {
@@ -73,12 +92,20 @@ ul {
 
 }
 
+.content-left {
+  margin: auto 0;
+}
+
 .drag-drop {
   background: #F4F4F4;
   border: 1px dashed #4A90E2;
   color: #000000;
   border-radius: 8px;
-  padding: 40px 0 90px;
+
+}
+
+.drag-drop_wrapp {
+  margin-bottom: 50px;
 }
 
 .drop-text {
@@ -93,6 +120,9 @@ ul {
   font-family: 'Palanquin', sans-serif;
 }
 
+.upload-icon .relative-trick .arrow {
+  z-index: 10;
+}
 
 .btn-success {
   font-family: 'Poppins', sans-serif;
@@ -114,7 +144,7 @@ ul {
 }
 
 .sign-checker .footer {
-  text-align: center;
+  flex: 1 0 auto;
 }
 
 .list_item {
@@ -134,6 +164,16 @@ ul {
   padding-bottom: 0;
 }
 
+.download-icon {
+  margin: 50px auto 0;
+}
+
+.sign-checker .download-icon .relative-trick .arrow {
+  transform: rotate(180deg);
+  z-index: 10;
+  left: 13px;
+}
+
 @media (max-width: 1000px) {
   .list_item .item-text {
     width: 205px;
@@ -141,8 +181,12 @@ ul {
 }
 
 */
-/* --- block-upload-progres ---*/
+/* --- /.footer ---*/
 
+
+.item-icon {
+  margin-top: 0;
+}
 
 .upload-block_inner {
   padding-left: 70px;
@@ -153,7 +197,6 @@ ul {
   font-size: 28px;
   text-align-last: left;
   margin-bottom: 30px;
-  padding-left: 40px;
 }
 
 .footer .block-upload-progres-title {
@@ -161,9 +204,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.block-upload-finish {
-  padding-left: 70px;
-}
+
 
 .block-progressbar {
   margin-left: 30px;
@@ -205,7 +246,8 @@ ul {
 }
 
 .download-attachment {
-  margin-left: 45px;
+  margin-left: 50px;
+  margin-bottom: 18px;
 }
 
 .download-attachment-title {
@@ -216,7 +258,7 @@ ul {
 
 /*--- block-upload-finish-list ---*/
 .block-upload-finish-list {
-
+  margin-top: 15px;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
@@ -241,8 +283,8 @@ ul {
   counter-increment: step-counter;
 }
 
-.footer .upload-list-item::before {
-  content: counter(step-counter);
+.sign-checker .footer ol li::before {
+  content: url(./images/check-mark-vector.svg);
   margin-right: 5px;
   font-size: 80%;
   background-color: rgb(200, 200, 200);
@@ -254,18 +296,18 @@ ul {
 }
 
 
-.upload-list-item:active:before {
+.sign-checker .footer ol li:active:before {
   background-color: #27AE60;
   transition: all 350ms;
 }
 
 /* ----footer--- */
-footer .container {
-  padding-left: 85px;
+.footer-bottom {
+  flex: 0 0 auto;
 }
 
 footer span {
   font-weight: normal;
   font-size: 16px;
-  padding: 50px 0 24px;
+  margin-bottom: 15px;
 }

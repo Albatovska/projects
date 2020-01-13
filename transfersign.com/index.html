@@ -14,200 +14,235 @@
 </head>
 
 <body>
-  <div class="sign-checker">
-    <header class=" header ">
-      <div class="container row">
-        <div class="w-50 row">
-          <div class="row logo-with-text w-100">
-            <div class="content-logo">
-              <img src="./images/Logo-big.svg" alt="logo" class="logo">
+  <div id="root">
+    <div class="sign-checker">
+      <header class="header row">
+        <div class="container row">
+          <div class="w-50 row">
+            <div class="row logo-with-text w-100">
+              <div class="content-logo">
+                <img src="./images/Logo-big.svg" alt="logo" class="logo">
+              </div>
+            </div>
+          </div>
+          <div class="w-50 row">
+            <nav class="navbar w-100">
+              <ul class=" row w-100">
+                <li class="nav-list_item col-4">
+                  <a href="#">About</a>
+                </li>
+                <li class="nav-list_item col-4">
+                  <a href="#">How it works</a>
+                </li>
+                <li class="nav-list_item col-4">
+                  <a href="#">TransferSign</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="content-custom row">
+        <div class=" container row">
+          <div class="offset-lg-1 col-lg-5 content">
+            <div class="content-block row">
+              <div class="content-label row">
+                <h1>
+                  Sign Checker
+                </h1>
+              </div>
+              <div class="content-text row">
+                <p>
+                  Check your transaction here.</br> See if signature and transaction are valid </br>and browse container
+                  structure
+                  with attachments. Simple. No registration required.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="offset-lg-1 col-lg-5 content-left">
+            <div class="drag-drop">
+              <div class="drag-drop_wrapp">
+                <div class="row">
+                  <div class="upload-icon col-2 offset-5">
+                    <div class="relative-trick">
+                      <div class="cloud">
+                        <img src="./images/upload-vector.svg" alt="uplpad" class="icons">
+                      </div>
+                      <div class="arrow">
+                        <img src="./images/arrow-vector.svg" alt="uplpad" class="icons">
+                      </div>
+                      <div class="line">
+                        <img src="./images/line-vector.jpg" alt="uplpad" class="icons">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="offset-1 col-10 button-menu">
+                    <div class="drop-text">
+                      Drag and drop ASICE container here
+                    </div>
+                    <div class="or-text">or</div>
+                    <div class="brows-file-button">
+                      <form class="my-form">
+                        <div class="brows-file-button">
+                          <input type="file" class="file" id="fileElem">
+                          <button class="btn-success">
+                            <label id="brows-file-label" for="fileElem">Browse files</label>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="w-50 row">
-          <nav class="navbar w-100">
-            <ul class=" row w-100">
-              <li class="nav-list_item col-4">
-                <a href="#">About</a>
-              </li>
-              <li class="nav-list_item col-4">
-                <a href="#">How it works</a>
-              </li>
-              <li class="nav-list_item col-4">
-                <a href="#">TransferSign</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <section class="content-custom ">
-      <div class=" container row">
-        <div class="w-50 content">
-          <div class="content-label row">
-            <h1>
-              Sign Checker
-            </h1>
-          </div>
-          <div class="content-text row">
-            <p>
-              Check your transaction here.</br> See if signature and transaction are valid </br>and browse container
-              structure
-              with attachments. Simple. No registration required.
-            </p>
-          </div>
-        </div>
-        <div class="w-50 ">
-          <div class="drag-drop">
-            <div class="row">
-              <div class="upload-icon col-2 offset-5">
+      </section>
+      <section class="footer row">
+        <div class="container ">
+          <div class="row justify-content-around d-none">
+            <div class="list_item align-items-center">
+              <div class="item-icon upload-icon">
                 <div class="relative-trick">
                   <div class="cloud">
-                    <img src="./images/upload-icon.svg" alt="uplpad" class="icons">
+                    <img src="./images/upload-vector.svg" alt="uplpad" class="icons">
+                  </div>
+                  <div class="arrow">
+                    <img src="./images/arrow-vector.svg" alt="uplpad" class="icons">
+                  </div>
+                  <div class="line">
+                    <img src="./images/line-vector.jpg" alt="uplpad" class="icons">
                   </div>
                 </div>
               </div>
+              <div class="item-text">
+                Upload ASICE container
+              </div>
+            </div>
+            <div class="list_item ">
+              <div class="item-icon upload-icon">
+                <a href="#" class="link">
+                  <img src="./images/check-icon.svg" alt="icon" class="icon">
+                </a>
+              </div>
+
+              <div class="item-text">
+                Check transaction
+                and signature
+              </div>
+
             </div>
 
-            <div class="drop-text">
-
-              Drag and drop ASICE container here
-
-            </div>
-            <div class="or-text">or</div>
-            <div class="brows-file-button">
-              <form class="my-form">
-                <div class="brows-file-button">
-                  <input type="file" class="file" id="fileElem">
-                  <button class="btn-success">
-                    <label id="brows-file-label" for="fileElem">Browse files</label>
-                  </button>
+            <div class="list_item align-items-center">
+              <div class="item-icon download-icon">
+                <div class="relative-trick">
+                  <div class="cloud">
+                    <img src="./images/upload-vector.svg" alt="uplpad" class="icons">
+                  </div>
+                  <div class="arrow">
+                    <img src="./images/arrow-vector.svg" alt="uplpad" class="icons">
+                  </div>
+                  <div class="line">
+                    <img src="./images/line-vector.jpg" alt="uplpad" class="icons">
+                  </div>
                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="footer">
-      <div class="container ">
-        <div class="row justify-content-around ">
-          <div class="list_item align-items-center">
-            <div class="item-icon">
-              <img src="./images/upload-icon.svg" alt="icon" class="icon">
-            </div>
-            <div class="item-text">
-              Upload ASICE container
-            </div>
-          </div>
-          <div class="list_item ">
-            <div class="item-icon">
-              <a href="#" class="link">
-                <img src="./images/check-icon.svg" alt="icon" class="icon">
-              </a>
-            </div>
-
-            <div class="item-text">
-              Check transaction
-              and signature
-            </div>
-
-          </div>
-
-          <div class="list_item ">
-            <div class="item-icon">
-              <img src="./images/download-icon.svg" alt="icon" class="icon">
-            </div>
-            <!-- /.icon -->
-            <div class="item-text">
-              Download transaction documents
-            </div>
-            <!-- /.item-text -->
-          </div>
-          <!-- /.additional-block_list_item -->
-        </div>
-        <div class="upload-block_inner container">
-          <div class="upload-block_inner-title d-none">
-            Uploads
-          </div>
-
-          <div class="block-upload-progres row d-none">
-
-            <div class="progres-icon">
-              <img src="./images/Group-upload.svg" alt="icon" class="icon">
-            </div>
-            <div class="block-progressbar row">
-              <div class="block-progressbar-title">
-                asice.container
               </div>
-              <div class="progressbar">
-
+              <!-- /.icon -->
+              <div class="item-text">
+                Download transaction documents
               </div>
-
+              <!-- /.item-text -->
             </div>
-            <!-- /.progres-show -->
-            <!-- /.progres-icon -->
+            <!-- /.additional-block_list_item -->
           </div>
-          <div class="block-upload-finish col d-none">
-            <div class="block-upload-finish-info row align-items-center">
+          <div class="upload-block_inner container">
+            <div class="upload-block_inner-title ">
+              Uploads
+            </div>
+
+            <div class="block-upload-progres row d-none">
+
               <div class="progres-icon">
                 <img src="./images/Group-upload.svg" alt="icon" class="icon">
               </div>
-              <div class="block-upload-finish-nameFile row">
-                Name asice.container
-              </div>
-              <!-- /.block-upload-finish-nameFile -->
-              <div class="block-upload-finish-delete row align-items-center">
-                <a href="#">
-                  <img src="./images/trash-2.svg" alt="" class="basket">
-                </a>
-              </div>
-              <!-- /.block-upload-finish-delete -->
-              <div class="download-attachment ">
-                <div class="download-attachment-title">
-                  Download </br>
-                  attachment
+              <div class="block-progressbar row">
+                <div class="block-progressbar-title">
+                  asice.container
                 </div>
-                <!-- /.download-attachment-title -->
-                <div class="download-attachment-icon">
+                <div class="progressbar">
+
+                </div>
+
+              </div>
+              <!-- /.progres-show -->
+              <!-- /.progres-icon -->
+            </div>
+            <div class="block-upload-finish col ">
+              <div class="block-upload-finish-info row align-items-center">
+                <div class="progres-icon">
+                  <img src="./images/Group-upload.svg" alt="icon" class="icon">
+                </div>
+                <div class="block-upload-finish-nameFile row">
+                  Name asice.container
+                </div>
+                <!-- /.block-upload-finish-nameFile -->
+                <div class="block-upload-finish-delete row align-items-center">
                   <a href="#">
-                    <img src="./images/Group_small.svg" alt="" class="icon">
+                    <img src="./images/trash-2.svg" alt="" class="basket">
                   </a>
                 </div>
-                <!-- /.download-attachment-icon -->
+                <!-- /.block-upload-finish-delete -->
+                <div class="download-attachment ">
+                  <div class="download-attachment-title">
+                    Download </br>
+                    attachment
+                  </div>
+                  <!-- /.download-attachment-title -->
+                  <div class="download-attachment-icon">
+                    <a href="#">
+                      <img src="./images/Group_small.svg" alt="" class="icon">
+                    </a>
+                  </div>
+                  <!-- /.download-attachment-icon -->
+                </div>
+                <!-- /.download-attachment -->
+
               </div>
-              <!-- /.download-attachment -->
 
+              <!-- /.block-upload-finish-info -->
+              <div class="block-upload-finish-list ">
+                <ol type="circle" class="custom-counter">
+                  <li class="upload-list-item">Container is valid</li>
+                  <li class="upload-list-item">Signature is valid</li>
+                  <li class="upload-list-item">Transaction is valid</li>
+                </ol>
+              </div>
+              <!-- /.block-upload-finish-list -->
             </div>
 
-            <!-- /.block-upload-finish-info -->
-            <div class="block-upload-finish-list ">
-              <ol type="circle" class="custom-counter">
-                <li class="upload-list-item">Container is valid</li>
-                <li class="upload-list-item">Signature is valid</li>
-                <li class="upload-list-item">Transaction is valid</li>
-              </ol>
-            </div>
-            <!-- /.block-upload-finish-list -->
           </div>
+          <!--/.upload-block_inner-->
 
+          <!-- /.upload-block_inner -->
         </div>
-        <!--/.upload-block_inner-->
+        <!-- /.container -->
 
-        <!-- /.upload-block_inner -->
-      </div>
-      <!-- /.container -->
-
-    </section>
-    <!-- /.additional -->
-    <footer class="footer-bottom">
-      <div class="container row">
-        <span>© 2019 TransferSign</span>
-      </div>
-      <!-- /.container -->
-    </footer>
+      </section>
+      <!-- /.additional -->
+      <footer class="footer-bottom row">
+        <div class="container ">
+          <span>© 2019 TransferSign</span>
+        </div>
+        <!-- /.container -->
+      </footer>
+    </div>
+    <!-- /.sign-checker -->
   </div>
-  <!-- /.sign-checker -->
   </div>
 
 </body>
