@@ -46,12 +46,16 @@ ul {
 }
 
 .logo-with-text {
-  padding-left: 100px;
+  padding-left: 62px;
+}
+
+.header-block-left {
+  margin-left: 18px;
 }
 
 .navbar ul {
   margin: auto;
-  padding-left: 0;
+
 }
 
 .nav-list_item {
@@ -59,6 +63,10 @@ ul {
   font-size: 18px;
   color: #000000;
   margin: auto;
+}
+
+.nav-list_item:last-child {
+  margin-right: 0;
 }
 
 /* ----content-custom--- */
@@ -139,7 +147,7 @@ ul {
 
 /* ------- footer ----- */
 .footer .container {
-  padding-top: 50px;
+  /* padding-top: 20px; */
 
 }
 
@@ -189,7 +197,7 @@ ul {
 }
 
 .upload-block_inner {
-  padding-left: 70px;
+  padding-left: 40px;
 }
 
 .upload-block_inner-title {

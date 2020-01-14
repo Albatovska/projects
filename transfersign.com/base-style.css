@@ -24431,7 +24431,7 @@ input[type=checkbox] {
 
 .sign-checker .content-custom {
   background-color: #3080DE;
-  min-height: 45% !important;
+  /* min-height: 45% !important; */
 }
 
 .sign-checker .content-custom .content-label>h1 {
